@@ -1,0 +1,29 @@
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\bin\NarayanaReports.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\bin\NarayanaReports.xml
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.Resources.resources
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.vbproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.dll
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.xml
+c:\users\administrator\documents\visual studio 2013\Projects\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.pdb
+E:\NarayanaReports\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll.config
+E:\NarayanaReports\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll
+E:\NarayanaReports\NarayanaReports\NarayanaReports\bin\NarayanaReports.pdb
+E:\NarayanaReports\NarayanaReports\NarayanaReports\bin\NarayanaReports.xml
+E:\NarayanaReports\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.Resources.resources
+E:\NarayanaReports\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.vbproj.GenerateResource.Cache
+E:\NarayanaReports\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.dll
+E:\NarayanaReports\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.xml
+E:\NarayanaReports\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.pdb
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll.config
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\bin\NarayanaReports.dll
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\bin\NarayanaReports.pdb
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\bin\NarayanaReports.xml
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.vbprojAssemblyReference.cache
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.Resources.resources
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.vbproj.GenerateResource.cache
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.vbproj.CoreCompileInputs.cache
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.dll
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.xml
+C:\D-Drive\Surya\Narayana Education Society\NarayanaReports\NarayanaReports\obj\Debug\NarayanaReports.pdb

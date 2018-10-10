@@ -1,0 +1,1141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Narayana Group of Schools</title>
+    <meta content="Narayana Group of Schools" name="description">
+    <meta content="Narayana Group of Schools" name="author">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav" style="
+    height: 152px;
+">
+        <div class="topbar-main">
+            <div class="container-fluid">
+                <!-- Logo container-->
+                <div class="logo">
+                    <a href="index.html" class="logo"><img src="assets/images/logo-sm.png" alt="" class="logo-small"> <img src="assets/images/logo.png" alt="" class="logo-large"></a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras topbar-custom">
+                    <ul class="float-right list-unstyled mb-0">
+                        <li class="dropdown notification-list d-none d-sm-block">
+                            <!--<form role="search" class="app-search">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" placeholder="Search..">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>-->
+                        </li>
+                        <!--<li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="ti-bell noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+
+                        </li>-->
+                        <li class="dropdown notification-list">
+
+                        </li>
+                        <li class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link" id="mobileToggle">
+                                <div class="lines"><span></span> <span></span> <span></span></div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Inspection Report  </h4>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Reports</a></li>
+                            <li class="breadcrumb-item active">  Inspection Report</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu" style="display:none;">
+                        <li class="has-submenu"><a href="index.html"><i class="ti-dashboard"></i> <span>Reports</span></a></li>
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end navigation -->
+            </div>
+            <!-- end container-fluid -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+    <div class="wrapper">
+        <div class="container-fluid" style="height:120px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card m-b-20">
+                        <div class="card-body">
+                            <div class="row  m-b-20">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>State  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <option value="0">All</option>
+                                            <option value="1">Andhra Pradesh</option>
+                                            <option value="2">Telangana</option>
+                                            <option selected="selected" value="3">West Bengal</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>District  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <option value="0">All</option>
+                                            <option selected="selected" value="2">Kolkata</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Branch  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <!--<option value="All">All</option> onchange="branchSelection(this, event)" -->
+                                            <option selected="selected" value="WB-MAHESTALA-436">WB-MAHESTALA-436</option>
+                                            <option selected="selected" value="WB-KAL EXP-439">WB-KAL EXP-439</option>
+                                            <option selected="selected" value="WB-HALDIA-496">WB-HALDIA-496</option>
+                                            <option selected="selected" value="WB-FULBARI-BOYS-423">WB-FULBARI-BOYS-423</option>
+                                            <!--<option value="5">WB-SONARPUR-486</option>
+                                            <option value="6">WB-SILIGURI-BOYS-404</option>
+                                            <option value="7">WB-NT-397</option>
+                                            <option value="8">WB-BARASAT-437</option>
+                                            <option value="9">WB-RISHRA-441</option>
+                                            <option value="10">WB-KAL TOWN-440</option>
+                                            <option value="11">WB-HOWRAH-407</option>
+                                            <option value="12">WB-ANDAL-438</option>
+                                            <option value="13">WB-BARDHWAN-442</option>
+                                            <option value="14">WB-DURGAPUR-DAY-405</option>
+                                            <option value="15">WB-ASANSOL-406</option>
+                                            <option value="16">WB-ANDUL-435</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Report Type  </label>
+                                        <select id="selectReportType" name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select" onchange="getReportType(this)">
+                                            <option value="0">All</option>
+                                            <option value="1">Disciplary</option>
+                                            <option value="2">Academics</option>
+                                            <option value="3">General</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvDisciplary" class="col-md-2" style="display:none">
+                                    <div class="form-group">
+                                        <label>Disciplary  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option value="1">Assembly</option>
+                                            <option value="2">Uniform</option>
+                                            <option value="3">Class room managment</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvAcademics" class="col-md-2" style="display:none">
+                                    <div class="form-group">
+                                        <label>Academics  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option value="1">Subjects</option>
+                                            <option value="2">E-Dairy</option>
+                                            <option value="3">CCA/ECA - Activities</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvGeneral" class="col-md-2" style="display:none">
+                                    <div class="form-group">
+                                        <label>General  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option value="1">Log books/ Registers</option>
+                                            <option value="2">Staff</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="accordion">
+
+                                <div class="card mb-1" id="#disiplineAssembly">
+                                    <div class="card-header p-3" id="headingOne">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseOne" class="text-dark" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseOne">
+                                                DISCIPLINE   - ASSEMBLY
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Branch Wise</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="#branchWB-MAHESTALA-436">
+                                                        <td>
+                                                            <img src="images/plus-sign-16.png" onclick="branchdetails('#branchDetailsWB-MAHESTALA-436')" />Branch Name : WB-MAHESTALA-436
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="#branchDetailsWB-MAHESTALA-436">
+                                                        <td>
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">EKIDZ</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">ECHAMPS</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">High School</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active p-3" id="home" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought of the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="profile" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>END TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>DELAY IN MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>FORECLOSER MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="messages" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr id="#branchWB-KAL EXP-439">
+                                                        <td>
+                                                            <img src="images/plus-sign-16.png" onclick="branchdetails('#branchDetailsWB-KAL EXP-439')" />Branch Name : WB-KAL EXP-439
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="#branchDetailsWB-KAL EXP-439">
+                                                        <td>
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">EKIDZ</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">ECHAMPS</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">High School</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active p-3" id="home1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought of the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="profile1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>END TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>DELAY IN MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>FORECLOSER MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="messages1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr id="#branchWB-HALDIA-496">
+                                                        <td>
+                                                            <img src="images/plus-sign-16.png" onclick="branchdetails('#branchDetailsWB-HALDIA-496')" />Branch Name : WB-HALDIA-496
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="#branchDetailsWB-HALDIA-496">
+                                                        <td>
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">EKIDZ</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">ECHAMPS</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">High School</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active p-3" id="home1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought of the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="profile1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>END TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>DELAY IN MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>FORECLOSER MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="messages1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr id="#branchWB-FULBARI-BOYS-423">
+                                                        <td>
+                                                            <img src="images/plus-sign-16.png" onclick="branchdetails('#branchDetailsWB-FULBARI-BOYS-423')" />Branch Name : WB-FULBARI-BOYS-423
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="#branchDetailsWB-FULBARI-BOYS-423">
+                                                        <td>
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">EKIDZ</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">ECHAMPS</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">High School</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active p-3" id="home1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought of the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="profile1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>END TIME</th>
+                                                                                <td>NO</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>DELAY IN MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>FORECLOSER MINUTES</th>
+                                                                                <td>00:15 (minutes)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                                <div class="tab-pane p-3" id="messages1" role="tabpanel">
+                                                                    <div style="width: 220px;float: left;">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>START TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>ENDING TIME</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>SCHOOL PRAYER</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th>EKIDZ SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>WARM UP SONG</th>
+                                                                                <td>YES</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>THOUGHT FOR THE DAY</th>
+                                                                                <td>Thought for the day</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div style="clear:both;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+</table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#disiplineUniform">
+                                    <div class="card-header p-3" id="headingTwo">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseTwo" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseTwo">
+                                                DISCIPLINE  - UNIFORM
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 50%; float: left;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Branch</th>
+                                                        <th>Total</th>
+                                                        <th>Uniform Defaulters</th>
+                                                        <th>Late Comers</th>
+                                                        <th>ID Defaulters</th>
+                                                        <th>Shoe Defaulters</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <th>WB-MAHESTALA-436 </th>
+                                                        <td>230 </td>
+                                                        <td>10  </td>
+                                                        <td>13  </td>
+                                                        <td>16  </td>
+                                                        <td>20  </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th>WB-KAL EXP-439 </th>
+                                                        <td>210 </td>
+                                                        <td>12  </td>
+                                                        <td>15  </td>
+                                                        <td>18  </td>
+                                                        <td>20  </td>
+                                                         
+                                                    </tr>
+                                                    <tr>
+                                                        <th>WB-HALDIA-496</th>
+                                                        <td>300 </td>
+                                                        <td>15  </td>
+                                                        <td>20  </td>
+                                                        <td>25  </td>
+                                                        <td>30  </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            WB-FULBARI-BOYS-423
+                                                        </th>
+                                                        <td>200 </td>
+                                                        <td>5  </td>
+                                                        <td>10  </td>
+                                                        <td>15  </td>
+                                                        <td>20  </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            Grand Total
+                                                        </th>
+                                                        <th>
+                                                            900
+                                                        </th>
+                                                        <th>65</th>
+                                                        <th>58</th>
+                                                        <th>74</th>
+                                                        <th>90</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div id="chartdiv1" style="width: 50%; width: 47%; height: 400px; background-color: #FFFFFF;"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#disiplineClassRoomManagenent" style="display:none">
+                                    <div class="card-header p-3" id="headingThree">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseThree" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseThree">
+                                                DISCIPLINE  - CLASS ROOM MANAGEMENT
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#academicsSubjects" style="display:none">
+                                    <div class="card-header p-3" id="headingFour">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseFour" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseFour">
+                                                ACADEMICS  - SUBJECTS
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#academicsEdairy" style="display:none">
+                                    <div class="card-header p-3" id="headingFive">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseFive" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseFive">
+                                                ACADEMICS  - EDAIRY
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#academicsCCAECAActivities" style="display:none">
+                                    <div class="card-header p-3" id="headingSix">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseSix" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseSix">
+                                                ACADEMICS  - CCA/ECA - ACTIVITIES
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#generalLogBooks" style="display:none">
+                                    <div class="card-header p-3" id="headingSeven">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseSeven" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseSeven">
+                                                GENERAL  - LOG BOOKS AND REGISTERS
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1" id="#generalStaff" style="display:none">
+                                    <div class="card-header p-3" id="headingEight">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseEight" class="text-dark collapsed" data-toggle="collapse"
+                                               aria-expanded="false"
+                                               aria-controls="collapseEight">
+                                                GENERAL  - STAFF
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+
+        </div>
+        <!-- end container-fluid -->
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Required datatable js -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons mples -->
+    <script src="plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="plugins/datatables/jszip.min.js"></script>
+    <script src="plugins/datatables/pdfmake.min.js"></script>
+    <script src="plugins/datatables/vfs_fonts.js"></script>
+    <script src="plugins/datatables/buttons.html5.min.js"></script>
+    <script src="plugins/datatables/buttons.print.min.js"></script>
+    <script src="plugins/datatables/buttons.colVis.min.js"></script>
+    <!-- Responsiexamples -->
+    <script src="plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/pages/datatables.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script src="Js/jquery.min.js"></script>
+
+    <script src="Js/jquery.multiselect.js"></script>
+    <script src="Js/amcharts.js"></script>
+    <script src="Js/pie.js"></script>
+
+
+    <script>
+        $('select[multiple]').multiselect({
+            columns: 4,
+            placeholder: 'Select options'
+        });
+
+        function branchdetails(cnt) {
+            if (document.getElementById(cnt).style.display == 'none') { document.getElementById(cnt).style.display = ''; }
+            else { document.getElementById(cnt).style.display = 'none'; }
+        }
+
+
+        function branchSelection(element, event) {
+            for (var i = 0; i < element.options.length; i++) {
+                if (element.options[i].selected) {
+                    //alert('#branch' + element.options[i].value);
+                    document.getElementById('#branch' + element.options[i].value).style.display = '';
+                }
+                else {
+                    //alert(element.options[i].value)
+                    document.getElementById('#branch' + element.options[i].value).style.display = 'none';
+                }
+            }
+        }
+
+        function getReportType(element) {
+
+            document.getElementById('dvDisciplary').style.display = 'none';
+            document.getElementById('dvAcademics').style.display = 'none';
+            document.getElementById('dvGeneral').style.display = 'none';
+            document.getElementById('#disiplineAssembly').style.display = 'none';
+            document.getElementById('#disiplineUniform').style.display = 'none';
+            document.getElementById('#disiplineClassRoomManagenent').style.display = 'none';
+            document.getElementById('#academicsSubjects').style.display = 'none';
+            document.getElementById('#academicsEdairy').style.display = 'none';
+            document.getElementById('#academicsCCAECAActivities').style.display = 'none';
+            document.getElementById('#generalLogBooks').style.display = 'none';
+            document.getElementById('#generalStaff').style.display = 'none';
+            var boostatus = true;
+            for (var i = 0; i < element.options.length; i++) {
+                if (element.options[i].selected) {
+                    if (element.options[i].value == 0) {
+                        document.getElementById('dvDisciplary').style.display = '';
+                        document.getElementById('dvAcademics').style.display = '';
+                        document.getElementById('dvGeneral').style.display = '';
+                        document.getElementById('#disiplineAssembly').style.display = '';
+                        document.getElementById('#disiplineUniform').style.display = '';
+                        document.getElementById('#disiplineClassRoomManagenent').style.display = '';
+                        document.getElementById('#academicsSubjects').style.display = '';
+                        document.getElementById('#academicsEdairy').style.display = '';
+                        document.getElementById('#academicsCCAECAActivities').style.display = '';
+                        document.getElementById('#generalLogBooks').style.display = '';
+                        document.getElementById('#generalStaff').style.display = '';
+                        boostatus = false;
+                    } else
+                        //alert('#branch' + element.options[i].value);
+                        if (element.options[i].value == 1) {
+                            document.getElementById('dvDisciplary').style.display = '';
+
+                        } else
+                            if (element.options[i].value == 2) {
+                                document.getElementById('dvAcademics').style.display = '';
+                            } else
+                                if (element.options[i].value == 3) {
+                                    document.getElementById('dvGeneral').style.display = '';
+
+                                }
+                }
+                else {
+                    if (boostatus == false) {
+                        element.options[i].checked = true;
+                    }
+                }
+
+            }
+        }
+
+        AmCharts.makeChart("chartdiv1",
+            {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "innerRadius": "40%",
+                "titleField": "category",
+                "valueField": "column-1",
+                "colors": [
+                    "#009900",
+                    "#ff0000"
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                    "enabled": true,
+                    "align": "center",
+                    "markerType": "circle"
+                },
+                "titles": [],
+                "dataProvider": [
+                    {
+                        "category": "Total",
+                        "column-1": "900"
+                    },
+                    {
+                        "category": "Uniform Defaulters",
+                        "column-1": "65"
+                    },
+                     {
+                        "category": "Late Comers",
+                        "column-1": "58"
+                    },
+                    {
+                        "category": "ID Defaulters",
+                        "column-1": "74"
+                    },
+                    {
+                        "category": "Shoe Defaulters",
+                        "column-1": "90"
+                    }
+
+                ]
+            }
+        );
+
+    </script>
+    <style>
+        th {
+            font-weight: bold;
+        }
+    </style>
+
+</body>
+
+</html>

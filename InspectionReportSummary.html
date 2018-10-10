@@ -1,0 +1,2111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Narayana Group of Schools</title>
+    <meta content="Narayana Group of Schools" name="description">
+    <meta content="Narayana Group of Schools" name="author">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="css/jquery.multiselect.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav" style="
+    height: 152px;
+">
+        <div class="topbar-main">
+            <div class="container-fluid">
+                <!-- Logo container-->
+                <div class="logo">
+                    <a href="index.html" class="logo"><img src="assets/images/logo-sm.png" alt="" class="logo-small"> <img src="assets/images/logo.png" alt="" class="logo-large"></a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras topbar-custom">
+                    <ul class="float-right list-unstyled mb-0">
+                        <li class="dropdown notification-list d-none d-sm-block">
+                            <!--<form role="search" class="app-search">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" placeholder="Search..">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>-->
+                        </li>
+                        <!--<li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="ti-bell noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+
+                        </li>-->
+                        <li class="dropdown notification-list">
+
+                        </li>
+                        <li class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link" id="mobileToggle">
+                                <div class="lines"><span></span> <span></span> <span></span></div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Inspection Report  </h4>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Reports</a></li>
+                            <li class="breadcrumb-item active">  Inspection Report</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu" style="display:none;">
+                        <li class="has-submenu"><a href="index.html"><i class="ti-dashboard"></i> <span>Reports</span></a></li>
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end navigation -->
+            </div>
+            <!-- end container-fluid -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+    <div class="wrapper">
+        <div class="container-fluid" style="height:120px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card m-b-20">
+                        <div class="card-body">
+                            <div class="row  m-b-20">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>State  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <option value="0">All</option>
+                                            <option value="1">Andhra Pradesh</option>
+                                            <option value="2">Telangana</option>
+                                            <option selected="selected" value="3">West Bengal</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>District  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <option value="0">All</option>
+                                            <option selected="selected" value="2">Kolkata</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Branch  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection">
+                                            <!--<option value="All">All</option> onchange="branchSelection(this, event)" -->
+                                            <option selected="selected" value="WB-MAHESTALA-436">WB-MAHESTALA-436</option>
+                                            <option selected="selected" value="WB-KAL EXP-439">WB-KAL EXP-439</option>
+                                            <option selected="selected" value="WB-HALDIA-496">WB-HALDIA-496</option>
+                                            <option selected="selected" value="WB-FULBARI-BOYS-423">WB-FULBARI-BOYS-423</option>
+                                            <option selected="selected" value="5">WB-SONARPUR-486</option>
+                                            <option selected="selected" value="6">WB-SILIGURI-BOYS-404</option>
+                                            <option selected="selected" value="7">WB-NT-397</option>
+                                            <option selected="selected" value="8">WB-BARASAT-437</option>
+                                            <option selected="selected" value="9">WB-RISHRA-441</option>
+                                            <option selected="selected" value="10">WB-KAL TOWN-440</option>
+                                            <option selected="selected" value="11">WB-HOWRAH-407</option>
+                                            <option selected="selected" value="12">WB-ANDAL-438</option>
+                                            <option selected="selected" value="13">WB-BARDHWAN-442</option>
+                                            <option selected="selected" value="14">WB-DURGAPUR-DAY-405</option>
+                                            <option selected="selected" value="15">WB-ASANSOL-406</option>
+                                            <option selected="selected" value="16">WB-ANDUL-435</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Report Type  </label>
+                                        <select id="selectReportType" name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option selected="selected" value="1">Disciplary</option>
+                                            <option value="2">Academics</option>
+                                            <option value="3">General</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvCategory" class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Category  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option value="1">Assembly</option>
+                                            <option selected="selected" value="2">Uniform</option>
+                                            <option value="3">Class room managment</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvSubCategories" class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Sub Category  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select" onchange="getSubCategory(this)">
+                                            <option selected="selected" value="0">All</option>
+                                            <option value="1">Uniform Defaulters</option>
+                                            <option value="2">Late Comers</option>
+                                            <option value="3">ID Card Defaulters</option>
+                                            <option value="4">Shoe Defaulters</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div id="dvStartDate" class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Start Date  </label>
+                                        <div class='input-group date'>
+                                            <input id='dateStartDatetimepicker' type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="dvEndDate" class="col-md-2">
+                                    <div class="form-group">
+                                        <label>End Date  </label>
+                                        <input id='dateEndDatetimepicker' type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div id="dvAcademics" class="col-md-2" style="display:none">
+                                    <div class="form-group">
+                                        <label>Academics  </label>
+
+                                    </div>
+                                </div>
+
+                                <div id="dvGeneral" class="col-md-2" style="display:none">
+                                    <div class="form-group">
+                                        <label>General  </label>
+                                        <select name="multicheckbox[]" multiple="multiple" class="mulitselection custom-select">
+                                            <option value="0">All</option>
+                                            <option value="1">Log books/ Registers</option>
+                                            <option value="2">Staff</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="accordion">
+
+                                <div class="card mb-1" id="#disiplineUniform">
+                                    <div class="card-header p-3" id="headingOne">
+                                        <h6 class="m-0 font-14">
+                                            <a href="#collapseOne" class="text-dark" data-toggle="collapse"
+                                               aria-expanded="true"
+                                               aria-controls="collapseOne" id="headingsubCategory">
+                                                DISCIPLINE - ALL
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="card-body" id="subCategorySelectAll">
+                                                <table id="datatableSelectAll" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 60%; float: left;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Branch</th>
+                                                            <th>Strn</th>
+                                                            <th>Uniform </th>
+                                                            <th>Late Comers</th>
+                                                            <th>ID Card </th>
+                                                            <th>Shoes </th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>WB-MAHESTALA-436 </th>
+                                                            <td>230 </td>
+                                                            <td>10  </td>
+                                                            <td>13  </td>
+                                                            <td>16  </td>
+                                                            <td>20  </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-KAL EXP-439 </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-HALDIA-496</th>
+                                                            <td>300 </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>25  </td>
+                                                            <td>30  </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-FULBARI-BOYS-423
+                                                            </th>
+                                                            <td>200 </td>
+                                                            <td>5  </td>
+                                                            <td>10  </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SONARPUR-486
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SILIGURI-BOYS-404
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-NT-397
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARASAT-437
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-RISHRA-441
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-KAL TOWN-440
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-HOWRAH-407
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDAL-438
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARDHWAN-442
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-DURGAPUR-DAY-405
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ASANSOL-406
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDUL-435
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                Grand Total
+                                                            </th>
+                                                            <th>
+                                                                3460
+                                                            </th>
+                                                            <th>186</th>
+                                                            <th>238</th>
+                                                            <th>290</th>
+                                                            <th>330</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="chartdiv1" style="width: 40%; height: 400px; background-color: #FFFFFF;"></div>
+                                            </div>
+
+                                            <div class="card-body" id="subCategoryUniformDefault" style="display:none">
+                                                <table id="datatableUniformDefaulters" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 60%; float: left;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Branch</th>
+                                                            <th>Strn</th>
+                                                            <th>Sep 12th</th>
+                                                            <th>Sep 21st</th>
+                                                            <th>Sep 29th</th>
+                                                            <th>Oct 4th</th>
+                                                            <th>Avg</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody  id="cdetails">
+
+                                                        <tr>
+                                                            <th>WB-MAHESTALA-436 </th>
+                                                            <td>230 </td>
+                                                            <td>10  </td>
+                                                            <td>13  </td>
+                                                            <td>16  </td>
+                                                            <td>20  </td>
+                                                            <td>14.8</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-KAL EXP-439 </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-HALDIA-496</th>
+                                                            <td>300 </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>25  </td>
+                                                            <td>30  </td>
+                                                            <td>22.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-FULBARI-BOYS-423
+                                                            </th>
+                                                            <td>200 </td>
+                                                            <td>5  </td>
+                                                            <td>10  </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>12.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SONARPUR-486
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SILIGURI-BOYS-404
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-NT-397
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARASAT-437
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-RISHRA-441
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-KAL TOWN-440
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-HOWRAH-407
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDAL-438
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARDHWAN-442
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-DURGAPUR-DAY-405
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ASANSOL-406
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDUL-435
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                Grand Total
+                                                            </th>
+                                                            <th>
+                                                                3460
+                                                            </th>
+                                                            <th>11.6</th>
+                                                            <th>15</th>
+                                                            <th>18</th>
+                                                            <th>21</th>
+                                                            <th>16.3</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="chartdiv2" style="width: 40%;  height: 400px; background-color: #FFFFFF;"></div>
+                                            </div>
+
+                                            <div class="card-body" id="subCategoryLateComers" style="display:none">
+                                                <table id="datatableLateComers" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 60%; float: left;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Branch</th>
+                                                            <th>Strn</th>
+                                                            <th>Sep 12th</th>
+                                                            <th>Sep 21st</th>
+                                                            <th>Sep 29th</th>
+                                                            <th>Oct 4th</th>
+                                                            <th>Avg</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <th>WB-MAHESTALA-436 </th>
+                                                            <td>230 </td>
+                                                            <td>10  </td>
+                                                            <td>13  </td>
+                                                            <td>16  </td>
+                                                            <td>20  </td>
+                                                            <td>14.8</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-KAL EXP-439 </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-HALDIA-496</th>
+                                                            <td>300 </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>25  </td>
+                                                            <td>30  </td>
+                                                            <td>22.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-FULBARI-BOYS-423
+                                                            </th>
+                                                            <td>200 </td>
+                                                            <td>5  </td>
+                                                            <td>10  </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>12.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SONARPUR-486
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SILIGURI-BOYS-404
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-NT-397
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARASAT-437
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-RISHRA-441
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-KAL TOWN-440
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-HOWRAH-407
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDAL-438
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARDHWAN-442
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-DURGAPUR-DAY-405
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ASANSOL-406
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDUL-435
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                Grand Total
+                                                            </th>
+                                                            <th>
+                                                                3460
+                                                            </th>
+                                                            <th>11.6</th>
+                                                            <th>15</th>
+                                                            <th>18</th>
+                                                            <th>21</th>
+                                                            <th>16.3</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="chartdiv3" style="width: 40%;  height: 400px; background-color: #FFFFFF;"></div>
+                                            </div>
+
+                                            <div class="card-body" id="subCategoryIDDefaulters" style="display:none">
+                                                <table id="datatableIDDefaulters" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 60%; float: left;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Branch</th>
+                                                            <th>Strn</th>
+                                                            <th>Sep 12th</th>
+                                                            <th>Sep 21st</th>
+                                                            <th>Sep 29th</th>
+                                                            <th>Oct 4th</th>
+                                                            <th>Avg</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <th>WB-MAHESTALA-436 </th>
+                                                            <td>230 </td>
+                                                            <td>10  </td>
+                                                            <td>13  </td>
+                                                            <td>16  </td>
+                                                            <td>20  </td>
+                                                            <td>14.8</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-KAL EXP-439 </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-HALDIA-496</th>
+                                                            <td>300 </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>25  </td>
+                                                            <td>30  </td>
+                                                            <td>22.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-FULBARI-BOYS-423
+                                                            </th>
+                                                            <td>200 </td>
+                                                            <td>5  </td>
+                                                            <td>10  </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>12.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SONARPUR-486
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SILIGURI-BOYS-404
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-NT-397
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARASAT-437
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-RISHRA-441
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-KAL TOWN-440
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-HOWRAH-407
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDAL-438
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARDHWAN-442
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-DURGAPUR-DAY-405
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ASANSOL-406
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDUL-435
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                Grand Total
+                                                            </th>
+                                                            <th>
+                                                                3460
+                                                            </th>
+                                                            <th>11.6</th>
+                                                            <th>15</th>
+                                                            <th>18</th>
+                                                            <th>21</th>
+                                                            <th>16.3</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="chartdiv4" style="width: 40%;  height: 400px; background-color: #FFFFFF;"></div>
+                                            </div>
+
+                                            <div class="card-body" id="subCategoryShoeDefaulters" style="display:none">
+                                                <table id="datatableShoeDefaulters" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 60%; float: left;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Branch</th>
+                                                            <th>Strn</th>
+                                                            <th>Sep 12th</th>
+                                                            <th>Sep 21st</th>
+                                                            <th>Sep 29th</th>
+                                                            <th>Oct 4th</th>
+                                                            <th>Avg</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <th>WB-MAHESTALA-436 </th>
+                                                            <td>230 </td>
+                                                            <td>10  </td>
+                                                            <td>13  </td>
+                                                            <td>16  </td>
+                                                            <td>20  </td>
+                                                            <td>14.8</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-KAL EXP-439 </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>WB-HALDIA-496</th>
+                                                            <td>300 </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>25  </td>
+                                                            <td>30  </td>
+                                                            <td>22.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-FULBARI-BOYS-423
+                                                            </th>
+                                                            <td>200 </td>
+                                                            <td>5  </td>
+                                                            <td>10  </td>
+                                                            <td>15  </td>
+                                                            <td>20  </td>
+                                                            <td>12.5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SONARPUR-486
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-SILIGURI-BOYS-404
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-NT-397
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARASAT-437
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-RISHRA-441
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-KAL TOWN-440
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-HOWRAH-407
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDAL-438
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-BARDHWAN-442
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-DURGAPUR-DAY-405
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ASANSOL-406
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                WB-ANDUL-435
+                                                            </th>
+                                                            <td>210 </td>
+                                                            <td>12  </td>
+                                                            <td>15  </td>
+                                                            <td>18  </td>
+                                                            <td>20  </td>
+                                                            <td>16.3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                Grand Total
+                                                            </th>
+                                                            <th>
+                                                                3460
+                                                            </th>
+                                                            <th>11.6</th>
+                                                            <th>15</th>
+                                                            <th>18</th>
+                                                            <th>21</th>
+                                                            <th>16.3</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="chartdiv5" style="width: 40%;  height: 400px; background-color: #FFFFFF;"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+
+            </div>
+            <!-- end container-fluid -->
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content" style=" display: flow-root;">
+                <span style="float: right; width: 20px; " class="close">&times;</span>
+                <div style="clear:both;"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#EKidzDetailRpt" role="tab">EKIDZ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#ECHAMPSRpt" role="tab">ECHAMPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#HighSchoolrpt" role="tab">High School</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active p-3" id="EKidzDetailRpt" role="tabpanel">
+                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 50%; float: left;">
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>No of Students</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="GetStudentInfo(1)">
+                                    <th>PP1</th>
+                                    <td>5 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfo(2)">
+                                    <th>PP2</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <div id="studentInfo" style="float:left;margin-left:10px;display:none">
+                            <h4 class="mt-0 header-title">Student Information</h4>
+                            <table id="tblstudentinfopp1" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        529688
+                                    </td>
+                                    <td>vikas</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        529687
+                                    </td>
+                                    <td>Kholi</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        529689
+                                    </td>
+                                    <td>Surya</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        629688
+                                    </td>
+                                    <td>Banu</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        729687
+                                    </td>
+                                    <td>Mahi</td>
+                                </tr>
+
+                            </table>
+
+                            <table id="tblstudentinfopp2" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>
+                                        629688
+                                    </td>
+                                    <td>Banu</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        729687
+                                    </td>
+                                    <td>Mahi</td>
+                                </tr>
+
+                            </table>
+
+                            <div style="clear:both"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane p-3" id="ECHAMPSRpt" role="tabpanel">
+                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 50%; float: left;">
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>No of Students</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="GetStudentInfoChamp(1)">
+                                    <th>Class I</th>
+                                    <td>1 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoChamp(2)">
+                                    <th>Class II</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+
+                                <tr onclick="GetStudentInfoChamp(2)">
+                                    <th>Class III</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoChamp(2)">
+                                    <th>Class IV</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoChamp(2)">
+                                    <th>Class V</th>
+                                    <td>2 </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div id="studentInfochamp" style="float:left;margin-left:10px;display:none">
+                            <h4 class="mt-0 header-title">Student Information</h4>
+                            <table id="tblstudentinfoclassI" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        529688
+                                    </td>
+                                    <td>vikas</td>
+                                </tr>
+
+
+                            </table>
+
+                            <table id="tblstudentinfoclassII" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>
+                                        629688
+                                    </td>
+                                    <td>Banu</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        729687
+                                    </td>
+                                    <td>Mahi</td>
+                                </tr>
+
+                            </table>
+
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane p-3" id="HighSchoolrpt" role="tabpanel">
+                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 50%; float: left;">
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>No of Students</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="GetStudentInfoHigh(1)">
+                                    <th>Class VI</th>
+                                    <td>1 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoHigh(2)">
+                                    <th>Class VII</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+
+                                <tr onclick="GetStudentInfoHigh(2)">
+                                    <th>Class VIII</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoHigh(2)">
+                                    <th>Class IX</th>
+                                    <td>2 </td>
+
+
+                                </tr>
+                                <tr onclick="GetStudentInfoHigh(1)">
+                                    <th>Class X</th>
+                                    <td>1 </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div id="studentInfohigh" style="float:left;margin-left:10px;display:none">
+                            <h4 class="mt-0 header-title">Student Information</h4>
+                            <table id="tblstudentinfohighI" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        529688
+                                    </td>
+                                    <td>vikas</td>
+                                </tr>
+
+
+                            </table>
+
+                            <table id="tblstudentinfohighII" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0;display:none;">
+
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Admission No
+                                        </th>
+                                        <th>Name</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>
+                                        629688
+                                    </td>
+                                    <td>Banu</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        729687
+                                    </td>
+                                    <td>Mahi</td>
+                                </tr>
+
+                            </table>
+
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <!-- Required datatable js -->
+        <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons mples -->
+        <script src="plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="plugins/datatables/jszip.min.js"></script>
+        <script src="plugins/datatables/pdfmake.min.js"></script>
+        <script src="plugins/datatables/vfs_fonts.js"></script>
+        <script src="plugins/datatables/buttons.html5.min.js"></script>
+        <script src="plugins/datatables/buttons.print.min.js"></script>
+        <script src="plugins/datatables/buttons.colVis.min.js"></script>
+        <!-- Responsiexamples -->
+        <script src="plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <!-- Datatable init js -->
+        <!--<script src="assets/pages/datatables.init.js"></script>-->
+        <!-- App js -->
+        <!--<script src="assets/js/app.js"></script>-->
+        <script src="Js/jquery.min.js"></script>
+
+        <script src="Js/jquery.multiselect.js"></script>
+        <script src="Js/amcharts.js"></script>
+        <script src="Js/pie.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+        <script>
+            $('select[multiple]').multiselect({
+                columns: 4,
+                placeholder: 'Select options'
+            });
+
+            function branchdetails(cnt) {
+                if (document.getElementById(cnt).style.display == 'none') { document.getElementById(cnt).style.display = ''; }
+                else { document.getElementById(cnt).style.display = 'none'; }
+            }
+
+
+            function branchSelection(element, event) {
+                for (var i = 0; i < element.options.length; i++) {
+                    if (element.options[i].selected) {
+                        //alert('#branch' + element.options[i].value);
+                        document.getElementById('#branch' + element.options[i].value).style.display = '';
+                    }
+                    else {
+                        //alert(element.options[i].value)
+                        document.getElementById('#branch' + element.options[i].value).style.display = 'none';
+                    }
+                }
+            }
+
+            function getSubCategory(element) {
+                document.getElementById('subCategorySelectAll').style.display = 'none';
+                document.getElementById('subCategoryUniformDefault').style.display = 'none';
+                document.getElementById('subCategoryLateComers').style.display = 'none';
+                document.getElementById('subCategoryIDDefaulters').style.display = 'none';
+                document.getElementById('subCategoryShoeDefaulters').style.display = 'none';
+                var boostatus = true;
+                for (var i = 0; i < element.options.length; i++) {
+
+                    if (element.options[i].selected) {
+                        if (element.options[i].value == 0) {
+                            document.getElementById('subCategorySelectAll').style.display = '';
+                            document.getElementById('headingsubCategory').innerHTML = "DISCIPLINE - ALL";
+                            boostatus = false;
+                        } else
+                            if (element.options[i].value == 1) {
+                                document.getElementById('subCategoryUniformDefault').style.display = '';
+                                document.getElementById('headingsubCategory').innerHTML = "DISCIPLINE - UNIFORM";
+
+                            }
+                            else
+                                if (element.options[i].value == 2) {
+                                    document.getElementById('subCategoryLateComers').style.display = '';
+                                    document.getElementById('headingsubCategory').innerHTML = "DISCIPLINE - LATECOMERS";
+
+                                }
+                                else
+                                    if (element.options[i].value == 3) {
+                                        document.getElementById('subCategoryIDDefaulters').style.display = '';
+                                        document.getElementById('headingsubCategory').innerHTML = "DISCIPLINE - ID DEFAULTERS";
+
+                                    }
+                                    else
+                                        if (element.options[i].value == 4) {
+                                            document.getElementById('subCategoryShoeDefaulters').style.display = '';
+                                            document.getElementById('headingsubCategory').innerHTML = "DISCIPLINE - SHOE DEFAULTERS";
+
+                                        }
+
+                    }
+                    else {
+                        if (boostatus == false) {
+                            element.options[i].checked = true;
+                        }
+                    }
+                }
+            }
+
+            function getReportType(element) {
+
+                document.getElementById('dvDisciplary').style.display = 'none';
+                document.getElementById('dvAcademics').style.display = 'none';
+                document.getElementById('dvGeneral').style.display = 'none';
+                document.getElementById('#disiplineAssembly').style.display = 'none';
+                document.getElementById('#disiplineUniform').style.display = 'none';
+                document.getElementById('#disiplineClassRoomManagenent').style.display = 'none';
+                document.getElementById('#academicsSubjects').style.display = 'none';
+                document.getElementById('#academicsEdairy').style.display = 'none';
+                document.getElementById('#academicsCCAECAActivities').style.display = 'none';
+                document.getElementById('#generalLogBooks').style.display = 'none';
+                document.getElementById('#generalStaff').style.display = 'none';
+                var boostatus = true;
+                for (var i = 0; i < element.options.length; i++) {
+                    if (element.options[i].selected) {
+                        if (element.options[i].value == 0) {
+                            document.getElementById('dvDisciplary').style.display = '';
+                            document.getElementById('dvAcademics').style.display = '';
+                            document.getElementById('dvGeneral').style.display = '';
+                            document.getElementById('#disiplineAssembly').style.display = '';
+                            document.getElementById('#disiplineUniform').style.display = '';
+                            document.getElementById('#disiplineClassRoomManagenent').style.display = '';
+                            document.getElementById('#academicsSubjects').style.display = '';
+                            document.getElementById('#academicsEdairy').style.display = '';
+                            document.getElementById('#academicsCCAECAActivities').style.display = '';
+                            document.getElementById('#generalLogBooks').style.display = '';
+                            document.getElementById('#generalStaff').style.display = '';
+                            boostatus = false;
+                        } else
+
+                            if (element.options[i].value == 1) {
+                                document.getElementById('dvDisciplary').style.display = '';
+
+                            } else
+                                if (element.options[i].value == 2) {
+                                    document.getElementById('dvAcademics').style.display = '';
+                                } else
+                                    if (element.options[i].value == 3) {
+                                        document.getElementById('dvGeneral').style.display = '';
+
+                                    }
+                    }
+                    else {
+                        if (boostatus == false) {
+                            element.options[i].checked = true;
+                        }
+                    }
+
+                }
+            }
+
+            AmCharts.makeChart("chartdiv1",
+                {
+                    "type": "pie",
+                    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                    "innerRadius": "40%",
+                    "titleField": "category",
+                    "valueField": "column-1",
+                    "colors": [
+                        "#009900",
+                        "#ff0000"
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "align": "center",
+                        "markerType": "circle"
+                    },
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "category": "Uniform",
+                            "column-1": "186"
+                        },
+                        {
+                            "category": "Late Comers",
+                            "column-1": "238"
+                        },
+                        {
+                            "category": "ID Card",
+                            "column-1": "290"
+                        },
+                        {
+                            "category": "Shoes",
+                            "column-1": "330"
+                        }
+
+                    ]
+                }
+            );
+
+            AmCharts.makeChart("chartdiv2",
+                {
+                    "type": "pie",
+                    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                    "innerRadius": "40%",
+                    "titleField": "category",
+                    "valueField": "column-1",
+                    "colors": [
+                        "#009900",
+                        "#ff0000"
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "align": "center",
+                        "markerType": "circle"
+                    },
+                    "titles": [],
+                    "dataProvider": [
+
+                        {
+                            "category": "Sep 12th",
+                            "column-1": "10.5"
+                        },
+                        {
+                            "category": "Sep 21st",
+                            "column-1": "15"
+                        },
+                        {
+                            "category": "Sep 29th",
+                            "column-1": "19"
+                        },
+                        {
+                            "category": "Oct 4th",
+                            "column-1": "23"
+                        }
+
+                    ]
+                }
+            );
+
+            AmCharts.makeChart("chartdiv3",
+                {
+                    "type": "pie",
+                    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                    "innerRadius": "40%",
+                    "titleField": "category",
+                    "valueField": "column-1",
+                    "colors": [
+                        "#009900",
+                        "#ff0000"
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "align": "center",
+                        "markerType": "circle"
+                    },
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "category": "Total",
+                            "column-1": "900"
+                        },
+                        {
+                            "category": "Uniform Defaulters",
+                            "column-1": "65"
+                        },
+                        {
+                            "category": "Late Comers",
+                            "column-1": "58"
+                        },
+                        {
+                            "category": "ID Defaulters",
+                            "column-1": "74"
+                        },
+                        {
+                            "category": "Shoe Defaulters",
+                            "column-1": "90"
+                        }
+
+                    ]
+                }
+            );
+
+            AmCharts.makeChart("chartdiv4",
+                {
+                    "type": "pie",
+                    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                    "innerRadius": "40%",
+                    "titleField": "category",
+                    "valueField": "column-1",
+                    "colors": [
+                        "#009900",
+                        "#ff0000"
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "align": "center",
+                        "markerType": "circle"
+                    },
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "category": "Total",
+                            "column-1": "900"
+                        },
+                        {
+                            "category": "Uniform Defaulters",
+                            "column-1": "65"
+                        },
+                        {
+                            "category": "Late Comers",
+                            "column-1": "58"
+                        },
+                        {
+                            "category": "ID Defaulters",
+                            "column-1": "74"
+                        },
+                        {
+                            "category": "Shoe Defaulters",
+                            "column-1": "90"
+                        }
+
+                    ]
+                }
+            );
+
+            AmCharts.makeChart("chartdiv5",
+                {
+                    "type": "pie",
+                    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                    "innerRadius": "40%",
+                    "titleField": "category",
+                    "valueField": "column-1",
+                    "colors": [
+                        "#009900",
+                        "#ff0000"
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "align": "center",
+                        "markerType": "circle"
+                    },
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "category": "Total",
+                            "column-1": "900"
+                        },
+                        {
+                            "category": "Uniform ",
+                            "column-1": "65"
+                        },
+                        {
+                            "category": "Late Comers",
+                            "column-1": "58"
+                        },
+                        {
+                            "category": "ID Card",
+                            "column-1": "74"
+                        },
+                        {
+                            "category": "Shoes",
+                            "column-1": "90"
+                        }
+
+                    ]
+                }
+
+            );
+
+
+
+            $('#dateStartDatetimepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+
+
+            $('#dateEndDatetimepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+
+            });
+
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            $("#cdetails").on("click", "th", function () {
+                modal.style.display = "block";
+            });
+
+            //var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            //btn.onclick = function () {
+            //    modal.style.display = "block";
+            //}
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            function GetStudentInfo(rowcount) {
+                document.getElementById("studentInfo").style.display = '';
+                //    $('#tblstudentinfo tr').hide();
+                document.getElementById('tblstudentinfopp1').style.display = 'none';
+                document.getElementById('tblstudentinfopp2').style.display = 'none';
+                if (rowcount == 1) {
+                    document.getElementById('tblstudentinfopp1').style.display = '';
+                }
+                else
+                    if (rowcount == 2) {
+                        document.getElementById('tblstudentinfopp2').style.display = '';
+                    }
+
+
+            }
+
+            function GetStudentInfoChamp(row) {
+                document.getElementById("studentInfochamp").style.display = '';
+                document.getElementById('tblstudentinfoclassI').style.display = 'none';
+                document.getElementById('tblstudentinfoclassII').style.display = 'none';
+                if (row == 1) {
+                    document.getElementById('tblstudentinfoclassI').style.display = '';
+                }
+                else
+                    if (row == 2) {
+                        document.getElementById('tblstudentinfoclassII').style.display = '';
+                    }
+
+            }
+
+
+            function GetStudentInfoHigh(row) {
+                document.getElementById("studentInfohigh").style.display = '';
+                document.getElementById('tblstudentinfohighI').style.display = 'none';
+                document.getElementById('tblstudentinfohighII').style.display = 'none';
+                if (row == 1) {
+                    document.getElementById('tblstudentinfohighI').style.display = '';
+                }
+                else
+                    if (row == 2) {
+                        document.getElementById('tblstudentinfohighII').style.display = '';
+                    }
+
+            }
+
+
+        </script>
+        <style>
+            th {
+                font-weight: bold;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 999; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        </style>
+
+
+</body>
+
+</html>
